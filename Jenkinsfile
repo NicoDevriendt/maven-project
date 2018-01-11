@@ -4,7 +4,7 @@ pipeline {
         stage('build'){
             steps{
               echo "clean package begin"
-              mvn clean package
+              sh 'mvn clean package'
               echo "clean package end"
             }
             post
